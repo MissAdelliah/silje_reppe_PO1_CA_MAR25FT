@@ -19,29 +19,32 @@
 
   /***** DESKTOP SIZES *****/
   --fs-h1-desk: 4rem; /* 64px */
-  --fs-h4-desk: 2.25rem; /* 36px */
-  --fs-h3-desk: 2rem; /* 32px */
-
-  --fs-body-desk: 1.75rem; /* 28px */
-  --fs-readers-desk: 2rem; /* 32px */
-  --fs-meta-desk: 1rem; /* 16px  */
-  --fs-username-desk: 1rem; /* 16px */
-  --fs-leader-desk: 1.5rem; /* 24px */
-  --fs-footer-desk: 1.5rem; /* 24px */
-  --fs-button-desk: 1.5rem; /* 24px */
+  --fs-h2-desk: 2.25rem; /* 36px */
+  --fs-body-desk: 2.25rem; /* 36px */
 
   /******* COLORS ******/
-  --ink: #292929;
-  --bg: #fafafa;
-  --pink-100: #fff2f2;
-  --pink-500: #b84269;
-  --gray-400: #6e6e6e;
-  --gray-200: #d9d9d9;
-  --gray-100: #f0f0f0;
-  --gray-050: #f7f7f7;
+  --ink: #f1f1f1;
+  --bg: #010101;
+  --accent: #00bbff;
+  --gray-400: #0b0b0b;
+  --gray-300: #070707;
+  --gray-200: #171717;
+  --gray-100: #151515;
+  --gray-050: #212121;
 }
 
 body {
   background: var(--bg);
   color: var(--ink);
+}
+
+.hero__img {
+  display: flex;
+  justify-content: right;
+  height: auto;
+  width: auto;
+}
+
+h1 {
+  font-size: var(--fs-h1-desk);
 }
