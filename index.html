@@ -4,9 +4,15 @@ type html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
     <script type="module" src="./src/index.js" defer></script>
   </head>
   <body>
@@ -17,23 +23,41 @@ type html>
             <h1 class="hero__title">Hello I am Silje Reppe</h1>
             <p class="hero__subtitle">
               <span class="hero__role">Frontend Developer</span>
-              <span class="hero__meta">Based in Norway.</span>
+              <span class="hero__meta">Based In Norway.</span>
             </p>
-            <a href="https://www.linkedin.com/in/siljer/" class="hero__cta">
-              Connect with me
-            </a>
+            <div class="contain__cta">
+              <a href="https://www.linkedin.com/in/siljer/" class="hero__cta">
+                Connect with me
+              </a>
+            </div>
           </div>
           <div class="hero__media">
-            <img
-              class="hero__image"
-              src="./images/hero.png"
-              alt="Portrait of Silje Reppe"
-            />
+            <img class="hero__image" src="./images/hero.png" alt="Portrait" />
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <p>
+          Hi! I’m a web development student currently in my second year, I
+          currently work with HTML, CSS, and JavaScript, and I’m excited to
+          continue expanding my skills by learning new languages and frameworks
+          as I progress. I enjoy building responsive and user-friendly websites
+          while improving my understanding of how the web works. I’m also
+          interested in how teams collaborate in development environments.
+          During my studies I’ve tried working in a Scrum role, which sparked an
+          interest in potentially taking on larger responsibilities in team
+          environments as I gain more coding experience. My mindset toward
+          development is simple: nothing is too hard — I just haven’t learned it
+          yet. I enjoy solving problems, learning new concepts, and continuously
+          improving my skills as a developer. Outside of development, I enjoy
+          gaming, tabletop games like Dungeons & Dragons and Magic: The
+          Gathering, painting, and cars. I enjoy creative hobbies and
+          problem-solving, which also influences how I approach development.
+        </p>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
