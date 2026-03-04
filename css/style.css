@@ -79,17 +79,17 @@ h1 {
 .hero__meta {
   color: rgba(241, 241, 241, 0.8);
 }
-
-button {
+.hero__cta {
+  display: inline-block;
   padding: 0.9rem 1.6rem;
-  border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+  text-decoration: none;
+
   color: var(--ink);
+  background: rgba(255, 255, 255, 0.05);
 
   border: 1px solid rgba(255, 255, 255, 0.2);
-
-  cursor: pointer;
 
   transition:
     transform 0.15s ease,
@@ -97,18 +97,9 @@ button {
     box-shadow 0.15s ease;
 }
 
-button:hover {
+.hero__cta:hover {
   transform: translateY(-1px);
   border-color: var(--accent);
-
-  box-shadow:
-    0 0 0 2px rgba(0, 187, 255, 0.15),
-    0 10px 30px rgba(0, 0, 0, 0.6);
-}
-
-button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
 }
 
 .hero__img {
@@ -123,10 +114,6 @@ button:focus-visible {
   filter: grayscale(100%) contrast(1.05);
   opacity: 0.95;
 }
-
-/* ============================= */
-/* RESPONSIVE */
-/* ============================= */
 
 @media (max-width: 900px) {
   .hero__grid {
