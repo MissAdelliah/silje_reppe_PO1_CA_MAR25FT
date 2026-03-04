@@ -1,5 +1,6 @@
-* {
-  font-family: 'Inter', sans-serif, Helvetica, sans-serif, Roboto;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -32,19 +33,112 @@
   --gray-100: #151515;
   --gray-050: #212121;
 }
-
 body {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
   background: var(--bg);
   color: var(--ink);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__grid {
+  width: min(1200px, 100% - 3rem);
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: var(--fs-h1-desk);
+  line-height: 1.05;
+}
+
+.hero__subtitle {
+  margin: 0 0 2rem;
+  font-size: var(--fs-body-desk);
+}
+
+.hero__role {
+  color: var(--accent);
+  font-weight: var(--fw-medium);
+}
+
+.hero__meta {
+  color: rgba(241, 241, 241, 0.8);
+}
+
+button {
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--ink);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+
+  box-shadow:
+    0 0 0 2px rgba(0, 187, 255, 0.15),
+    0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
 }
 
 .hero__img {
   display: flex;
-  justify-content: right;
-  height: auto;
-  width: auto;
+  justify-content: flex-end;
 }
 
-h1 {
-  font-size: var(--fs-h1-desk);
+.hero__img img {
+  width: min(520px, 40vw);
+  height: auto;
+
+  filter: grayscale(100%) contrast(1.05);
+  opacity: 0.95;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: var(--fs-h1-mobile);
+  }
+
+  .hero__img {
+    justify-content: flex-start;
+  }
 }

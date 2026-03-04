@@ -4,17 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="./css/style.css" />
     <script type="module" src="./src/index.js" defer></script>
   </head>
-  <body class="--bg">
+  <body>
     <header class="hero">
-      <div class="hero__grid">
-        <h1>Hello I am Silje Reppe</h1>
-        <h2>Frontend Developer Based In Norway.</h2>
-        <button>Connect with me</button>
-        <div class="hero__img">
-          <img src="./images/hero.png" alt="shot" />
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <h1 class="hero__title">Hello I am Silje Reppe</h1>
+            <p class="hero__subtitle">
+              <span class="hero__role">Frontend Developer</span>
+              <span class="hero__meta">Based in Norway.</span>
+            </p>
+            <a href="https://www.linkedin.com/in/siljer/" class="hero__cta">
+              Connect with me
+            </a>
+          </div>
+          <div class="hero__media">
+            <img
+              class="hero__image"
+              src="./images/hero.png"
+              alt="Portrait of Silje Reppe"
+            />
+          </div>
         </div>
       </div>
     </header>
