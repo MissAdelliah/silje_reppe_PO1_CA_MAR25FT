@@ -108,6 +108,7 @@ h1 {
 .hero__cta:hover {
   transform: translateY(-1px);
   border-color: var(--accent);
+  color: var(--accent);
   box-shadow: 0 4px 12.9px 2px var(--accent);
 }
 
