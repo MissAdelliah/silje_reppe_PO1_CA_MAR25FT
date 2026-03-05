@@ -1,22 +1,23 @@
 const projects = [
   {
     title: 'The Archive',
-    description: '',
-    image: 'img/archive.png',
+    description:
+      'The Archive is a place for stories that deserve to be remembered - blog',
+    image: './images/archive.png',
     live: 'https://missadelliah.github.io/Silje_Reppe_PE1_MAR25FT/',
     repo: 'https://github.com/MissAdelliah/Silje_Reppe_PE1_MAR25FT.git',
   },
   {
     title: 'GameHub',
-    description: 'Online game store.',
-    image: 'img/gamehub.png',
+    description: 'Online game store',
+    image: './images/gamehub.png',
     live: 'https://missadelliah.github.io/silje_reppe_JS1_CA_MAR25FT/',
     repo: 'https://github.com/MissAdelliah/silje_reppe_JS1_CA_MAR25FT.git',
   },
   {
     title: 'Rainydays',
     description: 'E-commerce outwear clothing',
-    image: 'img/rainydays.png',
+    image: './images/rainydays.png',
     live: 'https://missadelliah.github.io/html-css-js-siljereppe/',
     repo: 'https://github.com/MissAdelliah/html-css-js-siljereppe.git',
   },
