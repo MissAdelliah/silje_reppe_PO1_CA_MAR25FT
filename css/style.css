@@ -41,15 +41,29 @@ body {
   line-height: 1.5;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+.nav {
+  position: fixed; /* stays top */
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: 30 250 0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+.nav__icons {
+  display: flex; /* <-- makes them a row */
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding-right: 40px;
 }
 
 .hero__grid {
   width: auto;
   margin-inline: auto;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -184,6 +198,22 @@ h1 {
     padding-top: 3rem;
     display: block;
   }
+  .nav {
+    position: fixed; /* stays top */
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    z-index: 999;
+  }
+
+  .nav__icons {
+    display: flex; /* <-- makes them a row */
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
 
   .hero__content {
     padding-left: 0px;
@@ -191,7 +221,6 @@ h1 {
   .hero__grid {
     width: min(560px, 100% - 2rem);
     margin-inline: auto;
-
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
