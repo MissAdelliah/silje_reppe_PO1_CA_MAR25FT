@@ -170,8 +170,7 @@ h1 {
 .about__container {
   display: flex;
   justify-content: center;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin: 45px 300px 0;
 }
 .about--me {
   line-height: 2.5;
@@ -222,5 +221,19 @@ h1 {
 
   .hero__cta {
     align-self: flex-start;
+    max-width: 250px;
+    font-size: var(--fs-body-mobile);
+  }
+
+  .about__container {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about--me {
+    line-height: 2.2;
+    font-size: var(--fs-body-mobile);
+    text-align: center;
   }
 }
