@@ -12,11 +12,13 @@
 
   --fs-h1-mobile: 2.5rem;
   --fs-h2-mobile: 2rem;
+  --fa-h3-mobile: 1.5rem;
   --fs-body-mobile: 1rem;
 
   --fs-h1-desk: 4.6rem;
-  --fs-h2-desk: 2.75rem;
-  --fs-body-desk: 1.8rem;
+  --fs-h2-desk: 2rem;
+  --fs-body-desk: 1.5rem;
+  --fs-body-small: 1rem;
 
   --ink: #f1f1f1;
   --bg: #010101;
@@ -91,7 +93,6 @@ a {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(320px, 430px) minmax(580px, 1fr);
   grid-template-areas:
     'content media'
     'cta media';
@@ -102,23 +103,19 @@ a {
 
 .hero__content {
   grid-area: content;
-  max-width: 430px;
+  max-width: 800px;
   z-index: 2;
   align-self: end;
-  padding-right: 12px;
 }
 
 .hero__title {
-  margin: 0 0 1rem;
-  font-size: clamp(3.8rem, 5vw, var(--fs-h1-desk));
-  line-height: 0.96;
+  font-size: var(--fs-h1-desk);
   font-weight: var(--fw-light);
-  letter-spacing: -0.04em;
 }
 
 .hero__subtitle {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: var(--fs-h2-desk);
   line-height: 1.4;
 }
 
@@ -150,7 +147,7 @@ a {
   display: flex;
   justify-content: center;
   align-self: start;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .hero__cta {
@@ -159,7 +156,7 @@ a {
   justify-content: center;
   min-width: 220px;
   min-height: 56px;
-  padding: 0.95rem 1.5rem;
+  padding: 1.5rem 4rem;
   border-radius: 999px;
   text-decoration: none;
   font-size: var(--fs-body-desk);
@@ -250,11 +247,10 @@ a {
 }
 
 .work__title {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .work__title h2 {
-  margin: 0 0 0.35rem;
   font-size: var(--fs-h2-desk);
   line-height: 1.05;
   font-weight: var(--fw-regular);
@@ -263,7 +259,7 @@ a {
 .work__title p {
   margin: 0;
   color: rgba(241, 241, 241, 0.62);
-  font-size: 1rem;
+  font-size: var(--fs-body-small);
 }
 
 .projects-grid {
@@ -467,7 +463,6 @@ a {
 
   .about__me {
     font-size: var(--fs-body-mobile);
-    line-height: 2;
   }
 
   .work {
@@ -488,7 +483,7 @@ a {
   }
 
   .project-card h3 {
-    font-size: 1.5rem;
+    font-size: var(--fa-h3-mobile);
   }
 }
 
@@ -510,7 +505,7 @@ a {
 
   .hero__subtitle {
     max-width: 320px;
-    font-size: 1rem;
+    font-size: var(--fs-body-mobile);
   }
 
   .projects-grid {
