@@ -16,7 +16,7 @@
 
   --fs-h1-desk: 4.6rem;
   --fs-h2-desk: 2.75rem;
-  --fs-body-desk: 1.125rem;
+  --fs-body-desk: 1.8rem;
 
   --ink: #f1f1f1;
   --bg: #010101;
@@ -143,12 +143,6 @@ a {
   height: min(84vh, 860px);
   object-fit: cover;
   object-position: center;
-  filter: grayscale(100%) contrast(1.06);
-  opacity: 0.98;
-  transition:
-    height 0.45s ease,
-    transform 0.45s ease,
-    opacity 0.35s ease;
 }
 
 .hero__cta-wrap {
@@ -376,6 +370,13 @@ a {
   }
 }
 
+@media (max-width: 1080px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
 @media (max-width: 900px) {
   :root {
     --page-padding: 0px;
@@ -493,8 +494,8 @@ a {
 
 @media (max-width: 640px) {
   .hero__image {
-    height: 74vh;
-    min-height: 500px;
+    max-height: 400px;
+    width: 100%;
   }
 
   .hero__content {
