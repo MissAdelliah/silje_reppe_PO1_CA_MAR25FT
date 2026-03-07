@@ -1,5 +1,4 @@
-<!doc
-type html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,25 +9,25 @@ type html>
       href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
     <script type="module" src="./src/index.js" defer></script>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" aria-label="Social links">
       <div class="nav__icons">
-        <a href="https://github.com/MissAdelliah">
-          <img src="./icons/github.png" alt="GitHub" />
+        <a href="https://github.com/MissAdelliah" aria-label="GitHub">
+          <img src="./icons/github.png" alt="" />
         </a>
-        <a href="https://www.linkedin.com/in/siljer/">
-          <img src="./icons/linkedin.png" alt="LinkedIn" />
+        <a href="https://www.linkedin.com/in/siljer/" aria-label="LinkedIn">
+          <img src="./icons/linkedin.png" alt="" />
         </a>
-        <a href="https://www.instagram.com/siljeareppe/">
-          <img src="./icons/instagram.png" alt="Instagram" />
+        <a href="https://www.instagram.com/siljeareppe/" aria-label="Instagram">
+          <img src="./icons/instagram.png" alt="" />
         </a>
       </div>
     </nav>
+
     <header class="hero">
       <div class="container">
         <div class="hero__grid">
@@ -36,53 +35,62 @@ type html>
             <h1 class="hero__title">Hello I am Silje Reppe</h1>
             <p class="hero__subtitle">
               <span class="hero__role">Frontend Developer</span>
-              <span class="hero__meta">Based In Norway.</span>
+              <span class="hero__meta">Based in Norway.</span>
             </p>
-            <div class="contain__cta">
-              <a href="https://www.linkedin.com/in/siljer/" class="hero__cta">
-                Connect with me
-              </a>
-            </div>
           </div>
+
           <div class="hero__media">
             <img class="hero__image" src="./images/hero.png" alt="Portrait" />
+          </div>
+
+          <div class="hero__cta-wrap">
+            <a href="https://www.linkedin.com/in/siljer/" class="hero__cta">
+              Connect with me
+            </a>
           </div>
         </div>
       </div>
     </header>
+
     <main>
-      <section class="about__container">
-        <p class="about--me">
-          Second-year web development
-          <span class="pill">Student</span> I build projects using HTML, CSS,
-          and JavaScript. During my studies I’ve also taken on a
-          <span class="pill">Scrum / Project manager</span> role, which sparked
-          my interest in team collaboration and project organization.
-          <span class="pill">Expanding my skills</span> with tools such as React
-          and Tailwind. My mindset:
-          <span class="pill"
-            >Nothing is too hard — I just haven’t learned it yet</span
-          >
-          I enjoy gaming,
-          <span class="pill">TTRPGs</span> like Dungeons & Dragons and Magic:
-          The Gathering. It involves
-          <span class="pill">Collaborating</span> with others,
-          <span class="pill">Evaluating</span> different choices, and
-          <span class="pill">Adapting</span> to unexpected situations. They also
-          encourage <span class="pill">Risk taking</span> and the confidence to
-          challenge ideas and
-          <span class="pill">Influence</span> decision-making within a group,
-          which I love.
-        </p>
+      <section class="about">
+        <div class="container about__container">
+          <p class="about__me">
+            Second-year web development <span class="pill">Student</span> I
+            build projects using HTML, CSS, and JavaScript. During my studies
+            I’ve also taken on a
+            <span class="pill">Scrum / Project manager</span> role, which
+            sparked my interest in team collaboration and project organization.
+            <span class="pill">Expanding my skills</span> with tools such as
+            React and Tailwind. My mindset:
+            <span class="pill"
+              >Nothing is too hard — I just haven’t learned it yet</span
+            >
+            I enjoy gaming, <span class="pill">TTRPGs</span> like Dungeons &
+            Dragons and Magic: The Gathering. It involves
+            <span class="pill">Collaborating</span> with others,
+            <span class="pill">Evaluating</span> different choices, and
+            <span class="pill">Adapting</span> to unexpected situations. They
+            also encourage <span class="pill">Risk taking</span> and the
+            confidence to challenge ideas and
+            <span class="pill">Influence</span> decision-making within a group,
+            which I love.
+          </p>
+        </div>
       </section>
-      <section class="work__title">
-        <h2>My work</h2>
-        <p>Selected Projects</p>
-      </section>
-      <section class="work__container">
-        <div id="projects" class="projects-grid"></div>
+
+      <section class="work">
+        <div class="container">
+          <div class="work__title">
+            <h2>My work</h2>
+            <p>Selected Projects</p>
+          </div>
+
+          <div id="projects" class="projects-grid"></div>
+        </div>
       </section>
     </main>
+
     <footer></footer>
   </body>
 </html>
